@@ -1,3 +1,3 @@
-# _PORTFOLIO_
+# PORTFOLIO
 
-## React + TypeScript + Vite
+## _React + TypeScript + Vite_

@@ -1,0 +1,24 @@
+.scrollable-module {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000be0;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+
+  .content {
+    padding: 10px;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #002fff, rgb(166, 0, 255));
+    border-image-slice: 1;
+    width: 80vw;
+    height: 80vh;
+  }
+}

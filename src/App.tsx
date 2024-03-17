@@ -1,19 +1,19 @@
 import "./App.scss";
 import About from "./components/about/About";
-import Button from "./components/button/Button";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Container from "./components/projects/container/Container";
+import Home from "./components/home/Home";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Header />
-      <Button />
+      <Home />
       <About />
       <Container />
       <Footer />
-    </>
+    </div>
   );
 }
 

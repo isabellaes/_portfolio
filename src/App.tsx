@@ -1,15 +1,18 @@
-import { useState } from "react";
-
 import "./App.scss";
+import About from "./components/about/About";
+import Button from "./components/button/Button";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import Container from "./components/projects/container/Container";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <h1 className="logo">Hello World!</h1>
-      </div>
+      <Header />
+      <Button />
+      <About />
+      <Container />
+      <Footer />
     </>
   );
 }

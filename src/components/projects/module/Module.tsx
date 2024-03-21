@@ -17,10 +17,11 @@ const Module = (props: Props) => {
   return (
     <div className="scrollable-module">
       <div className="content">
-        <p onClick={props.onclose}>X</p>
+        <p className="close-icon" onClick={props.onclose}>
+          X
+        </p>
         <h2>{project.title}</h2>
         <p>{project.description}</p>
-        <div>BILDER</div>
       </div>
     </div>
   );

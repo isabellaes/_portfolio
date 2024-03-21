@@ -10,6 +10,13 @@ header {
       flex-direction: row;
       list-style-type: none;
       gap: 2em;
+
+      li {
+        cursor: pointer;
+      }
+      li:hover {
+        color: blue;
+      }
     }
   }
 }

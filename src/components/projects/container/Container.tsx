@@ -8,9 +8,8 @@ const Container = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const projects: Project[] = [
-    { id: 1, title: "Webb", description: "Webbshop - Frontend" },
-    { id: 2, title: "Mobil", description: "App - Fullstack" },
-    { id: 3, title: "Api", description: "Api" },
+    { id: 1, title: "WEBBSHOP", description: "Kommer snart..." },
+    { id: 2, title: "SUDOKU", description: "Kommer snart..." },
   ];
   return (
     <>

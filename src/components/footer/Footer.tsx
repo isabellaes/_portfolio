@@ -1,7 +1,12 @@
+import ContactForm from "../contact/ContactForm";
 import "./footer.scss";
 
 const Footer = () => {
-  return <footer>Kontakta mig här</footer>;
+  return (
+    <footer>
+      <ContactForm />
+    </footer>
+  );
 };
 
 export default Footer;

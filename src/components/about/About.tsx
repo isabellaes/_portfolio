@@ -3,7 +3,7 @@ import profilbild from "../../assets/profilbild.jpg";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="ABOUT" className="about">
       <h1>Om mig</h1>
 
       <p>

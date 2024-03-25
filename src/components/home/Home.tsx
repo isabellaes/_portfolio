@@ -3,7 +3,7 @@ import Button from "../button/Button";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div id="HOME" className="home">
       <h1>WEBBUTVECKLARE</h1>
       <h2>Med fokus på react och typescript.</h2>
       <br />

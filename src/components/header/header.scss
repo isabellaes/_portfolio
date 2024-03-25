@@ -2,7 +2,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1em;
+  width: 100vw;
+  height: 5em;
+  margin: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.536);
   nav {
     ul {
       display: flex;
@@ -12,9 +16,13 @@ header {
       gap: 2em;
 
       li {
-        cursor: pointer;
+        a {
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+        }
       }
-      li:hover {
+      li a:hover {
         color: blue;
       }
     }

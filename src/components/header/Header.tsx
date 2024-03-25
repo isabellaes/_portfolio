@@ -1,15 +1,22 @@
 import "./header.scss";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const Header = () => {
   return (
     <header>
       <nav>
         <ul>
-          <li>Hem</li>
-          <li>Om mig</li>
-          <li>Projekt</li>
-          <li>Kontakt</li>
+          <li>
+            <a href="#HOME">Hem</a>
+          </li>
+          <li>
+            <a href="#ABOUT">Om mig</a>
+          </li>
+          <li>
+            <a href="#PROJECT">Projekt</a>
+          </li>
+          <li>
+            <a href="#CONTACT">Kontakt</a>
+          </li>
         </ul>
       </nav>
     </header>

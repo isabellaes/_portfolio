@@ -1,12 +1,14 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import "./contactForm.scss";
 
 const ContactForm = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  /* const [loading, setLoading] = useState<boolean>(false); */
+
   const [errors, setErrors] = useState<string>("");
 
   const validateEmail = (email: string) => {
@@ -16,7 +18,6 @@ const ContactForm = () => {
 
   const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    /*  setLoading(true); */
 
     const emailmessage = {
       name: name,
@@ -43,48 +44,56 @@ const ContactForm = () => {
       );
   };
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        if (validateEmail(email) !== true) {
-          setErrors("Format: email@mail.se");
-        }
-        if (validateEmail(email)) {
-          setErrors("");
-          sendEmail(e);
-          e.currentTarget.reset();
-        }
-      }}
-      className={"contact-form"}
-    >
-      {/*    {loading ? <CircularProgress /> : <p></p>} */}
-      <label htmlFor="name">Namn: </label>
-      <input
-        required
-        id="name"
-        placeholder="Namn"
-        onChange={(e) => setName(e.currentTarget.value)}
-      />
+    <div id="CONTACT" className="contact">
+      <h1>Kontakt</h1>
+      <div className="contact-form-box">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (validateEmail(email) !== true) {
+              setErrors("Format: email@mail.se");
+            }
+            if (validateEmail(email)) {
+              setErrors("");
+              sendEmail(e);
+              e.currentTarget.reset();
+            }
+          }}
+          className={"contact-form"}
+        >
+          <h3>Kontakta mig här</h3>
+          <input
+            required
+            id="name"
+            placeholder="Namn"
+            onChange={(e) => setName(e.currentTarget.value)}
+          />
+          <input
+            required
+            id="email"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.currentTarget.value)}
+          />
+          {errors}
+          <input
+            required
+            id="message"
+            placeholder="Meddelande"
+            onChange={(e) => setMessage(e.currentTarget.value)}
+          />
 
-      <label htmlFor="email">Email: </label>
-      <input
-        required
-        id="email"
-        placeholder="Email"
-        onChange={(e) => setEmail(e.currentTarget.value)}
-      />
-      {errors}
-
-      <label htmlFor="message">Meddelande: </label>
-      <input
-        required
-        id="message"
-        placeholder="Meddelande"
-        onChange={(e) => setMessage(e.currentTarget.value)}
-      />
-
-      <button>Skicka</button>
-    </form>
+          <button>SKICKA</button>
+        </form>
+        <div className="row">
+          <a href="https://www.linkedin.com/in/isabellaes/">
+            <LinkedInIcon />
+          </a>
+          <a href="https://github.com/isabellaes">
+            <GitHubIcon />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 };
 

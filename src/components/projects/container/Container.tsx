@@ -12,7 +12,7 @@ const Container = () => {
     { id: 2, title: "SUDOKU", description: "Kommer snart..." },
   ];
   return (
-    <>
+    <div id="PROJECT">
       <h1 style={{ textAlign: "center" }}>Projekt</h1>
 
       <div className="container">
@@ -30,7 +30,7 @@ const Container = () => {
       ) : (
         <></>
       )}
-    </>
+    </div>
   );
 };
 

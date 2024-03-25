@@ -1,8 +1,7 @@
-import ContactForm from "../contact/ContactForm";
 import "./footer.scss";
 
 const Footer = () => {
-  return <footer></footer>;
+  return <footer>© Copyright 2024</footer>;
 };
 
 export default Footer;

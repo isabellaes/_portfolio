@@ -86,10 +86,10 @@ const ContactForm = () => {
         </form>
         <div className="row">
           <a href="https://www.linkedin.com/in/isabellaes/">
-            <LinkedInIcon />
+            <LinkedInIcon fontSize="large" />
           </a>
           <a href="https://github.com/isabellaes">
-            <GitHubIcon />
+            <GitHubIcon fontSize="large" />
           </a>
         </div>
       </div>

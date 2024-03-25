@@ -14,7 +14,6 @@ const Container = () => {
   return (
     <div id="PROJECT">
       <h1 style={{ textAlign: "center" }}>Projekt</h1>
-
       <div className="container">
         {projects.map((project) => (
           <Item

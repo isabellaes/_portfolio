@@ -1,9 +1,20 @@
 .container {
   padding: 1em;
-  min-height: 80vh;
   gap: 4em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+#PROJECT {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 4;
+  h1 {
+    padding: 1em;
+  }
 }

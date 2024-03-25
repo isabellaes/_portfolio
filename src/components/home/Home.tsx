@@ -7,7 +7,9 @@ const Home = () => {
       <h1>WEBBUTVECKLARE</h1>
       <h2>Med fokus på react och typescript.</h2>
       <br />
-      <Button text={"Kontakta mig"} onClick={() => console.log("clicked")} />
+      <a href="#CONTACT">
+        <Button text={"Kontakta mig"} onClick={() => console.log("clicked")} />
+      </a>
     </div>
   );
 };

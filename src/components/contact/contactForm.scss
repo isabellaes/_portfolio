@@ -2,15 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 4em;
+  min-height: 100vh;
 
   .contact-form-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(#002fff, rgb(166, 0, 255));
     padding: 2em;
     border-radius: 4px;
+    border: 2px solid;
+    border-image: linear-gradient(#002fff, rgb(166, 0, 255));
+    border-image-slice: 1;
+    box-shadow: 0 0 10px rgba(174, 1, 255, 0.5);
 
     .contact-form {
       display: flex;
@@ -24,23 +29,27 @@
       input {
         padding: 15px;
         border-radius: 3px;
-        border: none;
+        border: 1px solid #002fff;
+        background-color: #000000;
+        color: white;
       }
 
       button {
-        background-color: rgb(171, 123, 249);
-        border: 1px solid #2d033c;
         width: 12em;
-      }
-
-      button:hover {
-        background-color: rgb(183, 143, 247);
-        border: 1px solid #2d033c;
       }
     }
 
     .row {
+      display: flex;
       align-items: center;
+      justify-content: space-evenly;
+      width: 6em;
+
+      a {
+        color: rgb(166, 0, 255);
+        text-decoration: none;
+        cursor: pointer;
+      }
     }
   }
 }

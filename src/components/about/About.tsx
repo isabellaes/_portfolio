@@ -9,23 +9,19 @@ const About = () => {
       <p>
         <img src={profilbild} alt="profil-bild" />
         Hej! Jag heter Isabella och är en passionerad och ambitiös
-        utvecklarstudent med starka problemlösningsförmågor och analytiskt
-        tänkande. Min programmeringsresa började för ungefär tre år sedan när
-        jag påbörjade min utbildning som systemutvecklare och fördjupade mig i
-        grunderna av C# och .Net. Det dröjde inte länge innan jag utvecklade en
-        djup passion för kodning. Under de följande två åren ägnade jag mig
-        helhjärtat åt att lära mig och utveckla mina färdigheter. Medan mitt
-        fokus främst låg på backend-utveckling, fördjupade jag mig även i
-        frontend-utveckling under min utbildning.
+        utvecklarstudent. När jag inte programmerar gillar jag att lösa sudoku,
+        kolla serier eller umgås med min familj.
+        <br />
+        Min programmeringsresa började för ungefär tre år sedan när jag
+        påbörjade min utbildning till systemutvecklare på Borås YH. Det blev 2
+        intensiva och lärorika år innan jag tog examen i juni 2023. Under
+        utbildningen läste jag mestadels backendutveckling, men också en kortare
+        del med webb- och apputveckling.
         <br />
         <br />
-        I juni 2023 tog jag stolt emot min examen som systemutvecklare. Trots
-        att jag aktivt sökte jobbmöjligheter, stötte jag på utmaningar i den
-        konkurrensutsatta marknaden, med få företag som var i en position att
-        anställa. Som ett resultat av detta beslutade jag mig för att fortsätta
-        min utbildning vid samma institution, denna gång specialiserad på
-        frontend-utveckling. För närvarande är jag i mitt första år av denna
-        utbildning, och jag har redan skaffat mig betydande kunskap och
+        Efter examen valde jag att fortsätta mina studier, denna gång
+        specialiserad på frontend-utveckling. Jag läser nu min andra termin på
+        Borås YH, och jag har redan skaffat mig betydande kunskap och
         färdigheter. Jag ser med stor förväntan fram emot vad som väntar mig när
         jag närmar mig examen sommaren 2025.
         <br />

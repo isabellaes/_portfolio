@@ -1,4 +1,13 @@
 .about {
-  min-height: 80vh;
+  img {
+    max-width: 200px;
+    float: left;
+    margin-right: 2em;
+  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
   padding: 1em;
+  max-width: 60vw;
 }

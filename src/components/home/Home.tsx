@@ -6,6 +6,7 @@ const Home = () => {
     <div id="HOME" className="home">
       <h1>WEBBUTVECKLARE</h1>
       <h2>Med fokus på react och typescript.</h2>
+
       <br />
       <a href="#CONTACT">
         <Button text={"Kontakta mig"} onClick={() => console.log("clicked")} />

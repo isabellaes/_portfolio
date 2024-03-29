@@ -8,9 +8,9 @@ const About = () => {
 
       <p>
         <img src={profilbild} alt="profil-bild" />
-        Hej! Jag heter Isabella och är en passionerad och ambitiös
-        utvecklarstudent. När jag inte programmerar gillar jag att lösa sudoku,
-        kolla serier eller umgås med min familj.
+        Hej! Jag heter Isabella Ekdahl Sahlberg och är en passionerad och
+        ambitiös utvecklarstudent. När jag inte programmerar gillar jag att lösa
+        sudoku, kolla serier eller umgås med min familj.
         <br />
         Min programmeringsresa började för ungefär tre år sedan när jag
         påbörjade min utbildning till systemutvecklare på Borås YH. Det blev 2

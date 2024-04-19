@@ -32,7 +32,7 @@ const About = () => {
         andra praktikplats som startar i januari 2025 och varar ungefär 20
         veckor. Jag ser fram emot att hitta en plats där jag kan tillämpa det
         jag lärt mig och fortsätta att växa. Även om min passion ligger inom
-        webbutveckling är jag öppen för olika möjligheter. Om du är intresserad,
+        frontendutveckling är jag öppen för olika möjligheter. Om du är intresserad,
         tveka inte att kontakta mig!
       </p>
     </div>

@@ -1,5 +1,5 @@
 import "./about.scss";
-import profilbild from "../../assets/profilbild.jpg";
+import profile from "../../assets/20240429_113312.jpg";
 
 const About = () => {
   return (
@@ -7,7 +7,7 @@ const About = () => {
       <h1>Om mig</h1>
 
       <p>
-        <img src={profilbild} alt="profil-bild" />
+        <img src={profile} alt="profil-bild" />
         Hej! Jag heter Isabella Ekdahl Sahlberg och är en passionerad och
         ambitiös utvecklarstudent. När jag inte programmerar gillar jag att lösa
         sudoku, kolla serier eller umgås med min familj.
@@ -32,8 +32,8 @@ const About = () => {
         andra praktikplats som startar i januari 2025 och varar ungefär 20
         veckor. Jag ser fram emot att hitta en plats där jag kan tillämpa det
         jag lärt mig och fortsätta att växa. Även om min passion ligger inom
-        frontendutveckling är jag öppen för olika möjligheter. Om du är intresserad,
-        tveka inte att kontakta mig!
+        frontendutveckling är jag öppen för olika möjligheter. Om du är
+        intresserad, tveka inte att kontakta mig!
       </p>
     </div>
   );

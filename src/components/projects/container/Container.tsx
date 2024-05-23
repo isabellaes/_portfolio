@@ -6,10 +6,11 @@ import Module from "../module/Module";
 
 const Container = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [project, setProject] = useState({} as Project);
 
   const projects: Project[] = [
-    { id: 1, title: "WEBBSHOP", description: "Kommer snart..." },
-    { id: 2, title: "SUDOKU", description: "Kommer snart..." },
+    { id: 1, title: "Webbshop", description: "Kommer snart..." },
+    { id: 2, title: "Pysselfrun", description: "Kommer snart..." },
   ];
   return (
     <div id="PROJECT">
@@ -19,13 +20,16 @@ const Container = () => {
           <Item
             project={project}
             key={project.id}
-            onClick={() => setModalOpen(true)}
+            onClick={() => {
+              setProject(project);
+              setModalOpen(true);
+            }}
           />
         ))}
       </div>
 
       {modalOpen ? (
-        <Module project={projects[0]} onclose={() => setModalOpen(false)} />
+        <Module project={project} onclose={() => setModalOpen(false)} />
       ) : (
         <></>
       )}

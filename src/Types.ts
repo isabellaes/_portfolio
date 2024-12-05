@@ -1,8 +1,8 @@
-interface Project {
-  id: number;
+export type Project = {
+  id: string;
   title: string;
   description: string;
   github?: string;
-}
-
-export default Project;
+  img: string[];
+  url?: string;
+};

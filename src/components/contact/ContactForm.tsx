@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./contactForm.scss";
+import { Button } from "@mui/material";
 
 const ContactForm = () => {
   const [name, setName] = useState<string>("");
@@ -44,7 +45,7 @@ const ContactForm = () => {
       );
   };
   return (
-    <div id="CONTACT" className="contact">
+    <div className="contact">
       <h1>Kontakt</h1>
       <div className="contact-form-box">
         <form
@@ -82,7 +83,7 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.currentTarget.value)}
           />
 
-          <button>SKICKA</button>
+          <Button>SKICKA</Button>
         </form>
         <div className="row">
           <a href="https://www.linkedin.com/in/isabellaes/">

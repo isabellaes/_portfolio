@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Project from "../../../Types";
+import { Project } from "../../../Types";
 import "./module.scss";
 
 interface Props {
@@ -18,10 +18,15 @@ const Module = (props: Props) => {
     <div className="scrollable-module">
       <div className="content">
         <p className="close-icon" onClick={props.onclose}>
-          X
+          x
         </p>
-        <h2>{project.title}</h2>
-        <p>{project.description}</p>
+        <div className="content-div">
+          <img src={project.img} />
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
+          <a href={project.github}>Github repot</a>
+          <a href={project.url}>Länk till sidan</a>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../../button/Button";
 import "./item.scss";
-import Project from "../../../Types";
+import { Project } from "../../../Types";
 
 interface Props {
   project: Project;

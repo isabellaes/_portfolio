@@ -1,5 +1,8 @@
 import "./about.scss";
 import profile from "../../assets/20240429_113312.jpg";
+import Stack from "@mui/material/Stack";
+import Chip from "@mui/material/Chip";
+import { skills } from "../../data";
 
 const About = () => {
   return (
@@ -25,16 +28,23 @@ const About = () => {
         färdigheter. Jag ser med stor förväntan fram emot vad som väntar mig när
         jag närmar mig examen sommaren 2025.
         <br />
-        <br />
-        Jag söker för närvarande en praktikplats på ett företag där jag kan
-        tillämpa och utveckla mina färdigheter. Min första praktikplats är
-        planerad att starta i september 2024 och pågå i fyra veckor, följt av en
-        andra praktikplats som startar i januari 2025 och varar ungefär 20
-        veckor. Jag ser fram emot att hitta en plats där jag kan tillämpa det
-        jag lärt mig och fortsätta att växa. Även om min passion ligger inom
-        frontendutveckling är jag öppen för olika möjligheter. Om du är
-        intresserad, tveka inte att kontakta mig!
       </p>
+      <h3>Utbildningar</h3>
+
+      <p>Borås Yrkeshögskola</p>
+      <p className="italic">Frontendutvecklare, React - Nuvarande</p>
+      <p className="italic">Systemutvecklare .Net - Examen 06/23</p>
+      <h3>Stack</h3>
+      <Stack spacing={0.5} direction="row" useFlexGap flexWrap="wrap">
+        {skills.map((x) => (
+          <Chip
+            label={x}
+            variant="outlined"
+            key={x}
+            sx={{ marginInline: "0.5em", color: "#320a41" }}
+          ></Chip>
+        ))}
+      </Stack>
     </div>
   );
 };

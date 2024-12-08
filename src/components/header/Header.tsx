@@ -26,7 +26,7 @@ const Header = () => {
             navigation("/");
           }}
         >
-          Home
+          Hem
         </Button>
         <Button
           id="basic-button"
@@ -34,7 +34,7 @@ const Header = () => {
             navigation("about");
           }}
         >
-          About
+          Om mig
         </Button>
 
         <Button
@@ -44,7 +44,7 @@ const Header = () => {
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
         >
-          Projects
+          Projekt
         </Button>
         <Button
           id="basic-button"
@@ -52,7 +52,7 @@ const Header = () => {
             navigation("contact");
           }}
         >
-          Contact
+          Kontakta mig
         </Button>
         <Menu
           id="basic-menu"

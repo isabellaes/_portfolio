@@ -27,3 +27,15 @@
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .homePage {
+    h1 {
+      font-size: 2em;
+    }
+
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+}

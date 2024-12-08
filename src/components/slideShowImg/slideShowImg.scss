@@ -24,9 +24,15 @@
 
     .img {
       position: relative;
-      min-width: 500px;
+      max-width: 500px;
       overflow: hidden;
       margin: 1em 0 1em 0;
+      object-fit: contain;
+
+      img {
+        max-width: 500px;
+        max-height: auto;
+      }
     }
   }
 }
@@ -61,6 +67,12 @@
       width: 300px;
       overflow: hidden;
       margin: 1em 0 1em 0;
+      object-fit: contain;
+
+      img {
+        max-width: 300px;
+        max-height: auto;
+      }
     }
   }
 }

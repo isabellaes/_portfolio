@@ -1,5 +1,5 @@
 import "./header.scss";
-import { NavLink, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";

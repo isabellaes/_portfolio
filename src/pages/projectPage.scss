@@ -29,6 +29,24 @@
       border-image: linear-gradient(#002fff, rgb(166, 0, 255));
       border-image-slice: 1;
       box-shadow: 0 0 10px rgba(174, 1, 255, 0.5);
+      margin: 1em;
+    }
+    a {
+      width: 8em;
+      background-color: rgb(174, 87, 211);
+      border-radius: 5px;
+      border: none;
+      outline: #7e65e1 2px solid;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding: 0.7em;
+      margin-top: 1em;
+    }
+
+    a:hover {
+      outline: #4a30b0 2px solid;
+      background-color: rgb(102, 23, 137);
     }
   }
 }

@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import "./homePage.scss";
 import { useNavigate } from "react-router";
 import Footer from "../components/footer/Footer";

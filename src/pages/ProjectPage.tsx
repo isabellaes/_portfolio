@@ -12,7 +12,7 @@ const ProjectPage = () => {
         <img src={pyssel} alt="Pysselfrun" />
         <p>Detta är en hemsida jag byggt åt företaget Pysselfrun.</p>
         <p>Projektet är byggt med react och typescript.</p>
-        <a href="https://pysselfrun.se/">Länk till sidan</a>
+        <a href="https://pysselfrun.se/">SE LIVE</a>
       </div>
 
       <div className="content">
@@ -21,7 +21,7 @@ const ProjectPage = () => {
         <img src={poster} alt="Poster store webbshop" />
         <p>En Webbshop som är ett hobbyprojekt jag byggt.</p>
         <p>Projektet är byggt med react och typescript.</p>
-        <a href="https://github.com/isabellaes/poster-store">Länk till repot</a>
+        <a href="https://github.com/isabellaes/poster-store">GITHUB REPO</a>
       </div>
 
       <Footer color="black" />

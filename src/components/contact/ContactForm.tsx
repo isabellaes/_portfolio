@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./contactForm.scss";
-import { Button } from "@mui/material";
 
 const ContactForm = () => {
   const [name, setName] = useState<string>("");
@@ -83,7 +82,7 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.currentTarget.value)}
           />
 
-          <Button>SKICKA</Button>
+          <button>SKICKA</button>
         </form>
         <div className="row">
           <a href="https://www.linkedin.com/in/isabellaes/">

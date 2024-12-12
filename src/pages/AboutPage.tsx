@@ -3,6 +3,7 @@ import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
 import { skills } from "../data";
 import "./aboutPage.scss";
+import Footer from "../components/footer/Footer";
 
 const AboutPage = () => {
   return (
@@ -42,11 +43,17 @@ const AboutPage = () => {
               label={x}
               variant="outlined"
               key={x}
-              sx={{ marginInline: "0.5em", color: "white" }}
+              sx={{
+                marginInline: "0.6em",
+                color: "white",
+                outlineColor: "rgb(166, 0, 255)",
+              }}
+              color="primary"
             ></Chip>
           ))}
         </Stack>
       </div>
+      <Footer color="white" />
     </div>
   );
 };

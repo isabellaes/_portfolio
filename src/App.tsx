@@ -12,11 +12,10 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="project/:id" element={<ProjectPage />} />
+        <Route path="project" element={<ProjectPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="contact" element={<ContactPage />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

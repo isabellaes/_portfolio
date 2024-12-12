@@ -1,34 +1,30 @@
-import { Project } from "../Types";
-import { projects } from "../data";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router";
 import "./projectPage.scss";
-import SlideShowImg from "../components/slideShowImg/slideShowImg";
+import Footer from "../components/footer/Footer";
+import pyssel from "../assets/pysselfrun.png";
+import poster from "../assets/poster-store.png";
 
 const ProjectPage = () => {
-  const [project, setProject] = useState<Project>();
-  const params = useParams<{ id: string }>();
-
-  useEffect(() => {
-    const p = projects.find((p) => p.id === params.id);
-    if (p) {
-      setProject(p);
-    }
-  });
-
   return (
     <div className="projectPage">
-      {project ? (
-        <>
-          <SlideShowImg images={project.img} currentImg={project.img[0]} />
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
-          <a href={project.github}>Github repo</a>
-          <a href={project.url}>Länk till sidan</a>
-        </>
-      ) : (
-        <></>
-      )}
+      <div className="content">
+        <h1>Pysselfrun</h1>
+
+        <img src={pyssel} alt="Pysselfrun" />
+        <p>Detta är en hemsida jag byggt åt företaget Pysselfrun.</p>
+        <p>Projektet är byggt med react och typescript.</p>
+        <a href="https://pysselfrun.se/">Länk till sidan</a>
+      </div>
+
+      <div className="content">
+        <h1>Poster Store - Webbshop</h1>
+
+        <img src={poster} alt="Poster store webbshop" />
+        <p>En Webbshop som är ett hobbyprojekt jag byggt.</p>
+        <p>Projektet är byggt med react och typescript.</p>
+        <a href="https://github.com/isabellaes/poster-store">Länk till repot</a>
+      </div>
+
+      <Footer color="black" />
     </div>
   );
 };
